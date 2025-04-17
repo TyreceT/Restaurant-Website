@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@font-face {
+    font-family: 'Genty';
+    src: url('GentyDemo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    max-height: 100vh;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px; 
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container img {
+    width: 80px;
+    margin-left: 20px 
+}
+
+nav {
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover, nav a.active {
+    color: #cb3434;
+    text-decoration: none;
+}
+
+/* ----- BURGER MENU ----- */
+.burger-menu {
+    display: none; 
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 1001; 
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+/* Menu Section */
+.menu {
+    padding: 2rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Main Menu Heading */
+.menu h1 {
+    font-size: 4rem;
+    color: #cb3434;
+    font-weight: 800;
+    font-family: 'Genty', sans-serif;
+    margin-bottom: 2rem;
+}
+
+/* Submenu Section */
+.submenu {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Submenu Heading */
+.submenu h1 {
+    font-size: 4rem;
+    color: #cb3434;
+    font-weight: 800;
+    font-family: 'Genty', sans-serif;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.main-container {
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.main {
+    background-color: #560c0c65;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(190, 16, 16, 0.458);
+    width: 350px;
+    border: 5px solid #cb3434;
+    animation: scaleIn 1s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-image: url("Menu Visuals/bg.jpg");
+    font-weight: 800;
+
+}
+
+.main:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.94);
+    background-image: url("Menu Visuals/bg.png");
+}
+
+.main h3 {
+    font-size: 1.3rem;
+    color: #cb3434;
+    font-weight: 800;
+}
+
+.main h4 {
+    font-size: 1rem;
+    color: #30c4ff;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main p {
+    font-size: 0.7rem;
+    color: #ffd500;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.main:hover {
+    background-color: #f80000b2;
+    color: #cb3434;
+    border-color: #ff0202a0;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.main:hover h4 {
+    font-weight: 700;
+    color: #ffffff;
+}
+.main:hover h4
+.main:hover i,
+.main:hover h3,
+.main:hover p {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block; 
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9); 
+        text-align: center;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease-in-out;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    nav a {
+        display: block;
+        padding: 1px;
+        font-size: .8rem;
+    }
+
+    .menu-checkbox:checked + .burger-menu + nav {
+        height: 300px; 
+    }
+
+    .menu-checkbox:checked + .burger-menu + nav ul {
+        opacity: 1;
+    }
+
+    /* Smooth fade-in effect */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* ----- FOOTER ----- */
+.footer {
+    background-color: #000; 
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Contact Us Text */
+.footer-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: #d32f2f;
+}

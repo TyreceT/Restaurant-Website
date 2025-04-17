@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cosmic Diner | About Us</title>
+        <link rel="stylesheet" href="About_Us.css">
+    </head>
+
+    <body>
+        
+        <!--============================================================================
+                NAVIGATION BAR
+        ============================================================================ -->
+        <header>
+            <!-- LOGO -->
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="Logo.png" alt="Cosmic Diner Logo">
+                </a>
+            </div>
+        
+            <!-- HAMBURGER MENU -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="burger-menu">☰</label>
+        
+            <!-- NAVIGATION LIST -->
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                  <li><a href="Home.html" >Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="about.html"class="active">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--============================================================================
+                TITLE PAGE
+        ============================================================================ -->
+        <section class="hero">
+            <div>
+                <h1>About Cosmic Diner</h1>
+            </div>
+        </section>
+        
+        <!--============================================================================
+                HISTORY, MISSION, AND PRINCIPLE SECTION
+        ============================================================================ -->
+
+        <!-- 2 COLUMN CONTAINER/SECTION -->
+        <div class="section-wrapper">
+            <div class="grid-container">
+                <!-- LEFT SIDE | HISTORY -->
+                <section class="history">
+                    <div class="contenthistory">
+                        <h2>History</h2>
+                        <p>It started with five friends, zero investors, and a wild idea—to build a 1950s-inspired diner that wasn’t just a place to eat, but a whole experience.</p>
+                        <p>Tired of overpriced cafés and soulless fast food, they wanted something different:</p>
+                        <ul style="list-style: none;">
+                            <li>📸 Aesthetic enough for the ‘gram</li>
+                            <li>🍔 Affordable enough for students</li>
+                            <li>🎶 And vibey enough to feel like a movie scene</li>
+                        </ul>
+                        <p>Armed with DIY skills, second-hand furniture, and a lot of YouTube tutorials, they built Cosmic Diner from scratch—painting walls, hunting down vintage décor, and stringing up neon signs by hand. The goal? To make every corner Instagram-worthy while serving up the best damn burgers and milkshakes in town.</p>
+                        <p>But what really makes Cosmic Diner special isn’t just the neon lights or retro vibes—it’s the fact that the founders never left. They’re not just the brains behind the brand; they’re also the hands behind the grill, the voices that greet every customer, and the ones making sure every burger, shake, and plate of fries is served with heart.</p>
+                        <p>Now, Cosmic Diner is the go-to spot for students, blending retro nostalgia with 2025 energy—and the best part? The same five friends who built it are still working behind the counter, flipping burgers, refilling shakes, and keeping the dream alive, one meal at a time.</p>
+                    </div>
+                </section>
+
+                <!-- RIGHT SIDE | MISSION & PRINCIPLES -->
+                <section class="mission-principles">
+                    <div class="contentmission">
+                        <h2>Mission</h2>
+                        <p>Cosmic Diner is a student-built, student-run retro haven that blends 1950s nostalgia with 2025 energy. Our mission is to serve affordable, high-quality comfort food in a space that is as Instagrammable as it is welcoming. Every visit is more than just a meal—it’s an experience filled with neon lights, jukebox tunes, and good company.</p><br>
+                    </div>
+                    <div class="contentprinciple">
+                        <h2>Principles</h2>
+                        <p>🔥 <strong>DIY or Die.</strong> No investors, just passion, hard work, and student hustle.</p>
+                        <p>👨‍🍳 <strong>Bosses Work the Grill.</strong> Our founders don’t sit in an office; they flip the burgers.</p>
+                        <p>📸 <strong>If You Can’t Snap It, Did It Even Happen?</strong> Every inch of Cosmic is made for the ‘gram.</p>
+                        <p>🍟 <strong>Affordable, Because We Get It.</strong> We’re students too, and we keep prices real.</p><br>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--============================================================================
+                DINER INTERIOR SECTION
+        ============================================================================ -->   
+
+        <section class="photo-gallery">
+            <h2>A Sneak Peek at Cosmic Diner</h2>
+            <div class="gallery">
+                <!-- Image 1 -->
+                <a href="#popup1" class="gallery__item gallery__item--1">
+                    <img src="About Us Visuals/3.png" alt="Outside View" class="gallery__img">
+                </a>
+
+                <!-- Image 2 -->
+                <a href="#popup2" class="gallery__item gallery__item--2">
+                    <img src="About Us Visuals/4.png" alt="Staircase" class="gallery__img">
+                </a>
+
+                <!-- Image 3 -->
+                <a href="#popup3" class="gallery__item gallery__item--3">
+                    <img src="About Us Visuals/5.png" alt="Inside of Diner; Angle 1" class="gallery__img">
+                </a>
+
+                <!-- Image 4 -->
+                <a href="#popup4" class="gallery__item gallery__item--4">
+                    <img src="About Us Visuals/6.png" alt="Inside of Diner; Angle 2" class="gallery__img">
+                </a>
+
+                <!-- Image 5 -->
+                <a href="#popup5" class="gallery__item gallery__item--5">
+                    <img src="About Us Visuals/7.png" alt="Inside of Diner; Angle 3" class="gallery__img">
+                </a>
+
+                <!-- Image 6 -->
+                <a href="#popup6" class="gallery__item gallery__item--6">
+                    <img src="About Us Visuals/8.png" alt="Inside of Diner; Angle 4" class="gallery__img">
+                </a>
+            </div>
+
+            <!-- LIGHTBOX POPUP -->
+            <div id="popup1" class="lightbox">
+                <a href="#close" class="lightbox-close"></a>
+                <img src="About Us Visuals/3.png" alt="Outside View">
+            </div>
+            
+            <div id="popup2" class="lightbox">
+                <a href="#close" class="lightbox-close"></a>
+                <img src="About Us Visuals/4.png" alt="Staircase">
+            </div>
+            
+            <div id="popup3" class="lightbox">
+                <a href="#close" class="lightbox-close"></a>
+                <img src="About Us Visuals/5.png" alt="Inside of Diner; Angle 1">
+            </div>
+            
+            <div id="popup4" class="lightbox">
+                <a href="#close" class="lightbox-close"></a>
+                <img src="About Us Visuals/6.png" alt="Inside of Diner; Angle 2">
+            </div>
+            
+            <div id="popup5" class="lightbox">
+                <a href="#close" class="lightbox-close"></a>
+                <img src="About Us Visuals/7.png" alt="Inside of Diner; Angle 3">
+            </div>
+            
+            <div id="popup6" class="lightbox">
+                <a href="#close" class="lightbox-close"></a>
+                <img src="About Us Visuals/8.png" alt="Inside of Diner; Angle 4">
+            </div>
+        </section>
+        
+        <!--============================================================================
+                STAFF SECTION
+        ============================================================================ -->  
+
+        <section class="behind-cosmic">
+            <h2>Behind Cosmic Diner</h2>
+            <p>At Cosmic Diner, the founders aren’t just the brains behind the brand—they’re also the hands behind the grill, the voices that greet every guest, and the heart of every burger, shake, and fry served.</p>
+            <p>Meet the student-run team turning this retro dream into reality!</p>
+                
+            <!-- FLIP ALL CARDS BUTTON -->
+            <input type="checkbox" id="flip-toggle" class="flip-checkbox">
+            <label for="flip-toggle" class="flip-button">Flip All</label>
+
+            <!-- STAFF CARDS CAROUSEL -->
+            <div class="carousel">
+                <!-- Card 1 | Janine Anne Arzadon -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="About Us Visuals/Front-HeadChef.png" alt="Head Chef | Janine Anne Arzadon">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="About Us Visuals/Back-HeadChef.png" alt="Head Chef | Janine Anne Arzadon">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 | Marjorie Delos Santos -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="About Us Visuals/Front-GrillCook.png" alt="Grill Cook | Marjorie Delos Santos">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="About Us Visuals/Back-GrillCook.png" alt="Grill Cook | Marjorie Delos Santos">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 | Whayne Tyrece Tan -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="About Us Visuals/Front-LeadServer.png" alt="Lead Server | Whayne Tyrece Tan">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="About Us Visuals/Back-LeadServer.png" alt="Lead Server | Whayne Tyrece Tan">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 | Rainiel Josh Ladiao -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="About Us Visuals/Front-FloorManager.png" alt="Floor Manager | Rainiel Josh Ladiao">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="About Us Visuals/Back-FloorManager.png" alt="Floor Manager | Rainiel Josh Ladiao">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 | Nigel Frederick Torres -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="About Us Visuals/Front-Cashier.png" alt="Cashier | Nigel Frederick Torres">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="About Us Visuals/Back-Cashier.png" alt="Cashier | Nigel Frederick Torres">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+    <!--============================================================================
+            FOOTER SECTION
+    ============================================================================ -->  
+    <footer class="footer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <div class="footer-container">
+            <div class="footer-text">Connect with Us</div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</html>

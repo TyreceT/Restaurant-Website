@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--For logos in footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--For responsive nav bar-->
+    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <!--Page title-->
+    <title>Cosmic Diner | Contact</title>
+    <link rel="stylesheet" href="Contact_Style.css">
+</head>
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo.png" alt="Cosmic Diner Logo">
+            </a>
+        </div>
+    
+        <!-- HAMBURGER MENU -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="burger-menu">☰</label>
+    
+        <!-- NAVIGATION LIST -->
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+
+    <main>
+
+        <section class="address">
+            <h2>Address</h2>
+            <p>123 Masarap Street, Makati City, Metro Manila, Philippines</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <h4>Name:</h4>
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                        <td>
+                            <h4>Email:</h4>
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <form action=""> 
+                                <h4>Message:</h4>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                             </form>
+                        </td>
+                    </tr>
+                </table>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <div class="footer-container">
+            <div class="footer-text">Connect with Us</div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+
